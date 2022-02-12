@@ -1,0 +1,115 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/valorant.jpg);
+    background-size: cover;
+    position: relative;
+}
+*{
+    text-align: center;
+    margin: 0px;
+}
+
+select{
+    text-align: center;
+    font-size: 30px;
+}
+
+option{
+    font-size: 20px;
+    background-color: rgba(84, 151, 40, 0.308);
+}
+
+.attsel, .defsel{
+    width: 200px;
+    height: 50px;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 3px rgb(17, 0, 0) solid;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(240, 248, 255, 0);
+    font-family: 'Nunito', 'Arial';
+    appearance: none;
+}
+
+.defsel{
+    color: rgb(0, 0, 0);
+}
+
+#all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#attacker, #difender{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 30px 30px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#attacker{
+    position: relative;
+    background-color: rgba(255, 83, 83, 0.712);
+    margin-right: 50px;
+}
+
+#difender{
+    background-color: rgba(58, 58, 201, 0.616);
+    margin-left: 50px;
+}
+
+input{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.479);
+    margin-bottom: 10px;
+    font-size: 30px;
+    height: 50px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+input:focus{
+    background-color: rgb(255, 255, 255);
+    transition-duration: 100ms;
+    color: black;
+}
+
+#_ox{
+    position: absolute;
+    background-color: rgb(68, 68, 68);
+    width: 436px;
+    height: 30px;
+    margin-bottom: 435px;
+    margin-right: 536px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(216, 216, 216);
+    font-size: 13px;
+}
+#_ox2{
+    position: absolute;
+    background-color: rgb(68, 68, 68);
+    width: 436px;
+    height: 30px;
+    margin-bottom: 435px;
+    margin-left: 536px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(216, 216, 216);
+    font-size: 13px;
+}
