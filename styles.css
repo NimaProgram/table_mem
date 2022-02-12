@@ -49,6 +49,7 @@ option{
 }
 
 #attacker, #difender{
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,10 +89,10 @@ input:focus{
 #_ox{
     position: absolute;
     background-color: rgb(68, 68, 68);
-    width: 436px;
+    width: 400px;
     height: 30px;
     margin-bottom: 435px;
-    margin-right: 536px;
+    margin-right: 500px;
     border-radius: 10px 10px 0 0;
     display: flex;
     justify-content: center;
@@ -102,10 +103,10 @@ input:focus{
 #_ox2{
     position: absolute;
     background-color: rgb(68, 68, 68);
-    width: 436px;
+    width: 400px;
     height: 30px;
     margin-bottom: 435px;
-    margin-left: 536px;
+    margin-left: 500px;
     border-radius: 10px 10px 0 0;
     display: flex;
     justify-content: center;
