@@ -81,7 +81,7 @@ input{
 }
 
 input:focus{
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     transition-duration: 100ms;
     color: black;
 }
@@ -122,4 +122,19 @@ input:focus{
     color: white;
     padding: 10px 2px;
     margin: 700px 0 0 1500px ;
+}
+
+#attTopInput, #defTopInput{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 365px;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#attTopInput:focus, #defTopInput:focus{
+    background-color: #fff;
+    color: black;
 }
