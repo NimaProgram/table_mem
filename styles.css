@@ -60,12 +60,12 @@ option{
 
 #attacker{
     position: relative;
-    background-color: rgba(255, 83, 83, 0.712);
+    background-color: rgb(255, 83, 83);
     margin-right: 50px;
 }
 
 #difender{
-    background-color: rgba(58, 58, 201, 0.616);
+    background-color: rgb(58, 58, 201);
     margin-left: 50px;
 }
 
@@ -117,11 +117,11 @@ input:focus{
 
 #times{
     position: absolute;
-    width: fit-content;
+    width: 200px;
     background-color: black;
     color: white;
     padding: 10px 2px;
-    margin: 700px 0 0 1500px ;
+    margin: 700px 0 0 1500px;
 }
 
 #attTopInput, #defTopInput{
