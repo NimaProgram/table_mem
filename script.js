@@ -5,14 +5,21 @@ const onSD = document.getElementsByClassName("defsel");
 let times = document.getElementById("times");
 
 
+// -- -- -- -- -- onload -- -- -- -- -- //
+
+window.onload = () => {
+    times.style.display = 'none';
+}
+
+
 // -- -- -- -- -- Bocus script :) -- -- -- -- -- //
 
-const cUp = () => {
-    // let miltime = new Date().getTime();
-    let miltime = Math.random();
-    times.innerHTML = miltime * 100000000000000000;
-}
-setInterval(cUp, 50);
+// const cUp = () => {
+//     // let miltime = new Date().getTime();
+//     let miltime = Math.random();
+//     times.innerHTML = miltime * 100000000000000000;
+// }
+// setInterval(cUp, 50);
 
 
 // -- -- -- -- -- Process which select box  was changed. -- -- -- -- -- //
