@@ -138,3 +138,48 @@ input:focus{
     background-color: #fff;
     color: black;
 }
+
+#times_2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(79, 79, 79);
+    color: white;
+    margin: 400px 0 0 1500px;
+}
+
+#BtParent {
+    position: absolute;
+    margin: 300px 80vw 0 0;
+    width: 300px;
+    height: max-content;
+    padding: 50px 0 0 0;
+    background-color: rgb(0, 255, 242);
+    box-sizing: border-box;
+    border: rgba(5, 5, 1, 0.541) 3px solid;
+}
+
+#runBt{
+    width: 100px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    margin-bottom: 3px;
+    border: rgba(0, 0, 0, 0) solid 3px;
+}
+
+#runBt:hover{
+    opacity: 0.93;
+}
+
+#runBt:active{
+    color: black;
+    background-color: #fff;
+}
+
+#BtParent p {
+    background-color: white;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}

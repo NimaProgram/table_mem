@@ -9,10 +9,10 @@
     </head>
     <body>
         <div id="all">
-            <div id="attacker">
+            <div id="attacker" name="atc">
                 <input type="text" value="1" id="attTopInput">
                 <input type="text" value="Attacker">
-                <select name="aSel_1" class="attsel" >
+                <select id="aSel_1" class="attsel" >
                     <option class="emp"> </option>
                     <option class="p0">HqiHqt</option>
                     <option class="p1">Mir4i</option>
@@ -25,7 +25,7 @@
                     <option class="p8">poppy</option>
                     <option class="p9">syouyu</option>
                 </select>
-                <select name="aSel_2" class="attsel">
+                <select id="aSel_2" class="attsel">
                     <option class="emp"> </option>
                     <option class="p0">HqiHqt</option>
                     <option class="p1">Mir4i</option>
@@ -38,7 +38,7 @@
                     <option class="p8">poppy</option>
                     <option class="p9">syouyu</option>
                 </select>
-                <select name="aSel_3" class="attsel">
+                <select id="aSel_3" class="attsel">
                     <option class="emp"> </option>
                     <option class="p0">HqiHqt</option>
                     <option class="p1">Mir4i</option>
@@ -51,7 +51,7 @@
                     <option class="p8">poppy</option>
                     <option class="p9">syouyu</option>
                 </select>
-                <select name="aSel_4" class="attsel">
+                <select id="aSel_4" class="attsel">
                     <option class="emp"> </option>
                     <option class="p0">HqiHqt</option>
                     <option class="p1">Mir4i</option>
@@ -64,7 +64,7 @@
                     <option class="p8">poppy</option>
                     <option class="p9">syouyu</option>
                 </select>
-                <select name="aSel_5" class="attsel">
+                <select id="aSel_5" class="attsel">
                     <option class="emp"> </option>
                     <option class="p0">HqiHqt</option>
                     <option class="p1">Mir4i</option>
@@ -79,10 +79,10 @@
                 </select>
             </div>
     
-            <div id="difender">
+            <div id="difender" name="def">
                 <input type="text" value="1" id="defTopInput">
                 <input type="text" value="Defence">
-                <select name="dSel_1" class="defsel">
+                <select id="dSel_1" class="defsel">
                     <option class="emp"> </option>
                     <option class="p0">HqiHqt</option>
                     <option class="p1">Mir4i</option>
@@ -95,7 +95,7 @@
                     <option class="p8">poppy</option>
                     <option class="p9">syouyu</option>
                 </select>
-                <select name="dSel_2" class="defsel">
+                <select id="dSel_2" class="defsel">
                     <option class="emp"> </option>
                     <option class="p0">HqiHqt</option>
                     <option class="p1">Mir4i</option>
@@ -108,7 +108,7 @@
                     <option class="p8">poppy</option>
                     <option class="p9">syouyu</option>
                 </select>
-                <select name="dSel_3" class="defsel">
+                <select id="dSel_3" class="defsel">
                     <option class="emp"> </option>
                     <option class="p0">HqiHqt</option>
                     <option class="p1">Mir4i</option>
@@ -121,7 +121,7 @@
                     <option class="p8">poppy</option>
                     <option class="p9">syouyu</option>
                 </select>
-                <select name="dSel_4" class="defsel">
+                <select id="dSel_4" class="defsel">
                     <option class="emp"> </option>
                     <option class="p0">HqiHqt</option>
                     <option class="p1">Mir4i</option>
@@ -134,7 +134,7 @@
                     <option class="p8">poppy</option>
                     <option class="p9">syouyu</option>
                 </select>
-                <select name="dSel_5" class="defsel">
+                <select id="dSel_5" class="defsel">
                     <option class="emp"> </option>
                     <option class="p0">HqiHqt</option>
                     <option class="p1">Mir4i</option>
@@ -151,7 +151,13 @@
             <div id="_ox"><p>Members</p></div>
             <div id="_ox2"><p>Members</p></div>
 
-            <div id="times">1111111111111111111</div>
+            <div id="times">　</div>
+            <div id="times_2"></div>
+        
+            <div id="BtParent">
+                <p>ランダムでチームを決めます。</p>
+                <button type="button" id="runBt" onclick="runs()">RUN!</button>
+            </div>
         </div>
 
         <script src="script.js"></script>
