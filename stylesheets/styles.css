@@ -185,5 +185,6 @@ input:focus{
     width: fit-content;
     margin: 0 auto;
     margin-bottom: 20px;
-    padding: 5px 2px;
+    padding: 10px 2px;
+    font-family: 'Kosugi Maru', sans-serif;
 }
