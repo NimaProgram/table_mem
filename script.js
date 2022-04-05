@@ -20,7 +20,7 @@ const dSel_5 = document.getElementById("dSel_5");
 let times = document.getElementById("times");
 let times_2 = document.getElementById("times_2");
 
-let names = ["Hqihqt", "Mir4i", "Xellq", "NiMA", "ii5yu", "dariru", "golzou", "Syclet", "poppy", "syouyu"];
+let names = ["Hqihqt", "Mir4i", "Xellq", "NiMA", "ii5yu", "dariru", "golzou", "Lya", "poppy", "syouyu"];
 // -- -- -- -- -- onload -- -- -- -- -- //
 
 window.onload = () => {
@@ -29,7 +29,7 @@ window.onload = () => {
 }
 
 
-// -- -- -- -- -- Bocus script :) -- -- -- -- -- //
+// -- -- -- -- -- Bonus script :) -- -- -- -- -- //
 
 const cUp = () => {
     // let miltime = new Date().getTime();
@@ -291,4 +291,65 @@ const runs = () => {
         onSD[i].style.backgroundColor = "white";
         i++;
     }
+}
+
+
+// -- -- -- -- -- Change all selects to white -- -- -- -- -- //
+
+const towhite = () => { 
+    i = 0;
+    while(i < onSA.length){
+        onSA[i].style.backgroundColor = "white";
+        i++;
+    }
+    i = 0;
+    while(i < onSD.length){
+        onSD[i].style.backgroundColor = "white";
+        i++;
+    }
+}
+
+
+// -- -- -- -- -- Reflect saved preset -- -- -- -- -- //
+
+/*
+
+emp:0
+
+HqiHqt:1  Mir4i:2  Xellq:3  NiMA:4  ii5yu:5
+
+dariru:6  golzou:7  Lya:8  poppy:9  syouyu:10
+
+*/
+
+const ps1p = [3,5,8,1,9,4,2,10,6,7] // preset1
+
+const ps_1_run = () => { // assign preset1
+    aSel_1.selectedIndex = ps1p[0];
+    aSel_2.selectedIndex = ps1p[1];
+    aSel_3.selectedIndex = ps1p[2];
+    aSel_4.selectedIndex = ps1p[3];
+    aSel_5.selectedIndex = ps1p[4];
+    dSel_1.selectedIndex = ps1p[5];
+    dSel_2.selectedIndex = ps1p[6];
+    dSel_3.selectedIndex = ps1p[7];
+    dSel_4.selectedIndex = ps1p[8];
+    dSel_5.selectedIndex = ps1p[9];
+    towhite() // white select
+}
+
+const ps2p = [3,5,4,9,8,1,2,7,6,10] // preset2
+
+const ps_2_run = () => { // assign preset2
+    aSel_1.selectedIndex = ps2p[0];
+    aSel_2.selectedIndex = ps2p[1];
+    aSel_3.selectedIndex = ps2p[2];
+    aSel_4.selectedIndex = ps2p[3];
+    aSel_5.selectedIndex = ps2p[4];
+    dSel_1.selectedIndex = ps2p[5];
+    dSel_2.selectedIndex = ps2p[6];
+    dSel_3.selectedIndex = ps2p[7];
+    dSel_4.selectedIndex = ps2p[8];
+    dSel_5.selectedIndex = ps2p[9];
+    towhite() // white select
 }

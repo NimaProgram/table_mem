@@ -1,0 +1,67 @@
+#preset_outcase {
+    position: absolute;
+    margin: 0 0 500px 80vw;
+    width: 300px;
+    height: max-content;
+    padding: 20px;
+    background-color: rgb(255, 50, 50);
+    box-sizing: border-box;
+    border: rgb(0, 0, 0) 3px solid;
+    box-shadow: rgba(0, 0, 0, 0.616) 20px 20px 5px;
+}
+
+#preset_outcase p {
+    width: fit-content;
+    margin: 0 auto 15px auto;
+    font-style: italic;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    letter-spacing: 7px;
+    text-shadow: rgb(255, 255, 255) 3px 1px;
+}
+
+.smalls {
+    font-size: small;
+    font-style: italic;
+}
+
+.ps_outcase {
+    display: flex;
+    width: fit-content;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 2px;
+}
+
+.ps {
+    display: flex;
+    font-family: 'Kosugi Maru', sans-serif;
+    color: #000;
+    margin: 0;
+    width: 174px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.ps span {
+    width: fit-content;
+}
+
+.ps_button {
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    margin: 0;
+    border: rgba(0, 0, 0, 0) solid 3px;
+}
+
+.ps_button:hover {
+    opacity: 0.93;
+}
+
+.ps_button:active {
+    color: black;
+    background-color: rgb(133, 133, 133);
+}
