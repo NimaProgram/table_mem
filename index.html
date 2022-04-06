@@ -17,6 +17,7 @@
         <link rel="icon" href="favicon.ico" sizes="64x64">
         <title>チーム分け</title>
         <meta http-equiv="Cache-Control" content="no-cache">
+        <script type="text/javascript" src="head_script.js"></script>
     </head>
     <body>
         <div id="all">
@@ -180,8 +181,11 @@
                     <div class="ps"><span>現役vs元現役</span></div><button type="button" class="ps_button" onclick="ps_2_run()">RUN!</button>
                 </div>
             </div>
+            <div id="white_screen">
+                <img src="img/load2.svg" alt="none">
+            </div>
         </div>
 
-        <script src="script.js"></script>
+        <script src="script.js" onload="displayopen();"></script>
     </body>
 </html>

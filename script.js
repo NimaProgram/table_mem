@@ -124,9 +124,6 @@ onSD[4].onchange = event => {
 
 const runs = () => {
     nA = nB = nC = nD = nE = nF = nG = nH = nI = nJ = -1;
-    let hqt;
-    let mir; 
-    let xel, nim, ii5, dar, gol, syc, pop, syo;
     tmp = [];
 
     while (nA == -1){
@@ -353,3 +350,31 @@ const ps_2_run = () => { // assign preset2
     dSel_5.selectedIndex = ps2p[9];
     towhite() // white select
 }
+
+
+// -- -- -- -- -- Hide white display after loading -- -- -- -- -- //
+let tptime = 1;
+cps = 3; // カウントダウンの元の変数
+const whiteScreen = document.getElementById("white_screen"); // 要素の取得
+const counting = () => {
+    tptime -= 0.01;
+    whiteScreen.style.opacity = tptime;
+    if (tptime <= 0) {
+        clearInterval(cc);
+        whiteScreen.style.display = "none";
+    }
+}
+const pas = () => {
+    cps -= 1; // 変数cpsを-1
+    if (cps <= 0){
+        cc = setInterval(counting,10);
+        clearInterval(dd);
+    }
+}
+
+const displayopen = () => {
+    dd = setInterval(pas,1000); // インターバルのセット, 名前：dd, インターバル：1秒
+}
+    
+    
+

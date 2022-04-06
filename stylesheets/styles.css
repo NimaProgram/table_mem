@@ -188,3 +188,22 @@ input:focus{
     padding: 10px 2px;
     font-family: 'Kosugi Maru', sans-serif;
 }
+
+#frame {
+    position: absolute;
+}
+
+#white_screen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(3, 0, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#white_screen img {
+    width: 200px;
+    height: cover;
+}
