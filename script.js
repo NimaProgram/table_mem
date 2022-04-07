@@ -377,4 +377,32 @@ const displayopen = () => {
 }
     
     
+// -- -- -- -- -- Reset selected -- -- -- -- -- //
 
+// const attrash = document.getElementById("attrash")
+
+const resetAtt = () => {
+    i = 0;
+    while(i < onSA.length){
+        onSA[i].style.backgroundColor = "rgba(0, 0, 0, 0)";
+        i++;
+    }
+    aSel_1.selectedIndex = 0;
+    aSel_2.selectedIndex = 0;
+    aSel_3.selectedIndex = 0;
+    aSel_4.selectedIndex = 0;
+    aSel_5.selectedIndex = 0;
+}
+
+const resetDef = () => {
+    i = 0;
+    while(i < onSD.length){
+        onSD[i].style.backgroundColor = "rgba(0, 0, 0, 0)";
+        i++;
+    }
+    dSel_1.selectedIndex = 0;
+    dSel_2.selectedIndex = 0;
+    dSel_3.selectedIndex = 0;
+    dSel_4.selectedIndex = 0;
+    dSel_5.selectedIndex = 0;
+}

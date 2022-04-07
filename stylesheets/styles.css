@@ -35,6 +35,8 @@ option{
     background-color: rgba(240, 248, 255, 0);
     font-family: 'Nunito', 'Arial';
     appearance: none;
+    transition: ease-in-out 300ms;
+    transition-property: background-color;
 }
 
 .defsel{
@@ -205,5 +207,25 @@ input:focus{
 
 #white_screen img {
     width: 200px;
+    height: cover;
+}
+
+.trush {
+    position: absolute;
+    width: 25px;
+    height: cover;
+    margin: 340px 0 0 325px;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.trush:hover {
+    background: #fff;
+}
+
+.trush:active {
+    background-color: #fff;
+    opacity: 0.7;
+    width: 23px;
     height: cover;
 }
