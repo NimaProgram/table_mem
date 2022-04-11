@@ -424,6 +424,11 @@ const resetAtt = () => {
     aSel_3.selectedIndex = 0;
     aSel_4.selectedIndex = 0;
     aSel_5.selectedIndex = 0;
+    ns = 1
+    while (ns < 11){
+        readingName(ns)
+        ns ++;
+    }
 }
 
 const resetDef = () => {
@@ -437,6 +442,11 @@ const resetDef = () => {
     dSel_3.selectedIndex = 0;
     dSel_4.selectedIndex = 0;
     dSel_5.selectedIndex = 0;
+    ns = 1
+    while (ns < 11){
+        readingName(ns)
+        ns ++;
+    }
 }
 
 
