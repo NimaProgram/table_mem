@@ -203,8 +203,7 @@ const runs = () => {
 
     i = 0;
 
-
-// -- -- -- -- -- Assign to Select box -- -- -- -- -- //
+    // -- -- -- -- -- Assign to Select box -- -- -- -- -- //
 
     while (i < tmp.length){
         if(tmp[0] == i){
@@ -297,7 +296,7 @@ const runs = () => {
     i = 0;
 
 
-// -- -- -- -- -- Change to background-color for white -- -- -- -- -- //
+    // -- -- -- -- -- Change to background-color for white -- -- -- -- -- //
 
     while(i < onSA.length){
         onSA[i].style.backgroundColor = "white";
@@ -310,6 +309,12 @@ const runs = () => {
         onSD[i].style.backgroundColor = "white";
         i++;
     }
+    ns = 1
+    while (ns < 11){
+        readingName(ns)
+        ns ++;
+    }
+
 }
 
 
