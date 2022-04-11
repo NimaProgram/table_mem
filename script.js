@@ -17,6 +17,18 @@ const dSel_3 = document.getElementById("dSel_3");
 const dSel_4 = document.getElementById("dSel_4");
 const dSel_5 = document.getElementById("dSel_5");
 
+const aimg_1 = document.getElementById('aimg_1');
+const aimg_2 = document.getElementById('aimg_2');
+const aimg_3 = document.getElementById('aimg_3');
+const aimg_4 = document.getElementById('aimg_4');
+const aimg_5 = document.getElementById('aimg_5');
+
+const dimg_1 = document.getElementById('dimg_1');
+const dimg_2 = document.getElementById('dimg_2');
+const dimg_3 = document.getElementById('dimg_3');
+const dimg_4 = document.getElementById('dimg_4');
+const dimg_5 = document.getElementById('dimg_5');
+
 let times = document.getElementById("times");
 let times_2 = document.getElementById("times_2");
 
@@ -47,18 +59,20 @@ const cUp = () => {
 
 onSA[0].onchange = event => {
     if(onSA[0].selectedIndex > 0){
-        onSA[0].style.backgroundColor = "white"
+        onSA[0].style.backgroundColor = "white";
     }else {
-        onSA[0].style.backgroundColor = "#00000000"
+        onSA[0].style.backgroundColor = "#00000000";
     }
+    readingName(1);
 }
 
 onSA[1].onchange = event => {
     if(onSA[1].selectedIndex > 0){
-        onSA[1].style.backgroundColor = "white"
+        onSA[1].style.backgroundColor = "white";
     }else {
-        onSA[1].style.backgroundColor = "#00000000"
+        onSA[1].style.backgroundColor = "#00000000";
     }
+    readingName(2);
 }
 
 onSA[2].onchange = event => {
@@ -67,6 +81,7 @@ onSA[2].onchange = event => {
     }else {
         onSA[2].style.backgroundColor = "#00000000"
     }
+    readingName(3);
 }
 onSA[3].onchange = event => {
     if(onSA[3].selectedIndex > 0){
@@ -74,6 +89,7 @@ onSA[3].onchange = event => {
     }else {
         onSA[3].style.backgroundColor = "#00000000"
     }
+    readingName(4);
 }
 onSA[4].onchange = event => {
     if(onSA[4].selectedIndex > 0){
@@ -81,6 +97,7 @@ onSA[4].onchange = event => {
     }else {
         onSA[4].style.backgroundColor = "#00000000"
     }
+    readingName(5);
 }
 
 onSD[0].onchange = event => {
@@ -89,6 +106,7 @@ onSD[0].onchange = event => {
     }else {
         onSD[0].style.backgroundColor = "#00000000"
     }
+    readingName(6);
 }
 onSD[1].onchange = event => {
     if(onSD[1].selectedIndex > 0){
@@ -96,6 +114,7 @@ onSD[1].onchange = event => {
     }else {
         onSD[1].style.backgroundColor = "#00000000"
     }
+    readingName(7);
 }
 onSD[2].onchange = event => {
     if(onSD[2].selectedIndex > 0){
@@ -103,6 +122,7 @@ onSD[2].onchange = event => {
     }else {
         onSD[2].style.backgroundColor = "#00000000"
     }
+    readingName(8);
 }
 onSD[3].onchange = event => {
     if(onSD[3].selectedIndex > 0){
@@ -110,6 +130,7 @@ onSD[3].onchange = event => {
     }else {
         onSD[3].style.backgroundColor = "#00000000"
     }
+    readingName(9);
 }
 onSD[4].onchange = event => {
     if(onSD[4].selectedIndex > 0){
@@ -117,6 +138,7 @@ onSD[4].onchange = event => {
     }else {
         onSD[4].style.backgroundColor = "#00000000"
     }
+    readingName(10);
 }
 
 
@@ -333,6 +355,11 @@ const ps_1_run = () => { // assign preset1
     dSel_4.selectedIndex = ps1p[8];
     dSel_5.selectedIndex = ps1p[9];
     towhite() // white select
+    ns = 1
+    while (ns < 11){
+        readingName(ns)
+        ns ++;
+    }
 }
 
 const ps2p = [3,5,4,9,8,1,2,7,6,10] // preset2
@@ -349,6 +376,11 @@ const ps_2_run = () => { // assign preset2
     dSel_4.selectedIndex = ps2p[8];
     dSel_5.selectedIndex = ps2p[9];
     towhite() // white select
+    ns = 1
+    while (ns < 11){ // icon assign
+        readingName(ns)
+        ns ++;
+    }
 }
 
 
@@ -405,4 +437,401 @@ const resetDef = () => {
     dSel_3.selectedIndex = 0;
     dSel_4.selectedIndex = 0;
     dSel_5.selectedIndex = 0;
+}
+
+
+// -- -- -- -- -- set the icons -- -- -- -- -- //
+
+let id;
+let indexNum;
+const readingName = (id) => {
+    if (id == 1){
+        indexNum = aSel_1.selectedIndex;
+    }else if(id == 2){
+        indexNum = aSel_2.selectedIndex;
+    }else if(id == 3){
+        indexNum = aSel_3.selectedIndex;
+    }else if(id == 4){
+        indexNum = aSel_4.selectedIndex;
+    }else if(id == 5){
+        indexNum = aSel_5.selectedIndex;
+    }else if(id == 6){
+        indexNum = dSel_1.selectedIndex;
+    }else if(id == 7){
+        indexNum = dSel_2.selectedIndex;
+    }else if(id == 8){
+        indexNum = dSel_3.selectedIndex;
+    }else if(id == 9){
+        indexNum = dSel_4.selectedIndex;
+    }else if(id == 10){
+        indexNum = dSel_5.selectedIndex;
+    }
+    refIcon(indexNum,id)
+    console.log(indexNum)
+}
+let num,selNum;
+const refIcon = (num,selNum) => {
+    switch (selNum){
+        case 1:
+            switch (num){
+                case 0:
+                    aimg_1.removeAttribute('src');
+                    break;
+                case 1:
+                    aimg_1.setAttribute('src', 'img/icons/HqiHqt.webp');
+                    break;
+                case 2:
+                    aimg_1.setAttribute('src', 'img/icons/Mir4i.webp');
+                    break;
+                case 3:
+                    aimg_1.setAttribute('src', 'img/icons/Xellq.webp');
+                    break;
+                case 4:
+                    aimg_1.setAttribute('src', 'img/icons/NiMAS.webp');
+                    break;
+                case 5:
+                    aimg_1.setAttribute('src', 'img/icons/ii5yu.webp');
+                    break;
+                case 6:
+                    aimg_1.setAttribute('src', 'img/icons/dariru.webp');
+                    break;
+                case 7:
+                    aimg_1.setAttribute('src', 'img/icons/golzou.webp');
+                    break;
+                case 8:
+                    aimg_1.setAttribute('src', 'img/icons/LyA.webp');
+                    break;
+                case 9:
+                    aimg_1.setAttribute('src', 'img/icons/poppy.webp');
+                    break
+                case 10:
+                    aimg_1.setAttribute('src', 'img/icons/syouyu.webp');
+            }
+            break;
+        case 2:
+            switch (num){
+                case 0:
+                    aimg_2.removeAttribute('src');
+                    break;
+                case 1:
+                    aimg_2.setAttribute('src', 'img/icons/HqiHqt.webp');
+                    break;
+                case 2:
+                    aimg_2.setAttribute('src', 'img/icons/Mir4i.webp');
+                    break;
+                case 3:
+                    aimg_2.setAttribute('src', 'img/icons/Xellq.webp');
+                    break;
+                case 4:
+                    aimg_2.setAttribute('src', 'img/icons/NiMAS.webp');
+                    break;
+                case 5:
+                    aimg_2.setAttribute('src', 'img/icons/ii5yu.webp');
+                    break;
+                case 6:
+                    aimg_2.setAttribute('src', 'img/icons/dariru.webp');
+                    break;
+                case 7:
+                    aimg_2.setAttribute('src', 'img/icons/golzou.webp');
+                    break;
+                case 8:
+                    aimg_2.setAttribute('src', 'img/icons/LyA.webp');
+                    break;
+                case 9:
+                    aimg_2.setAttribute('src', 'img/icons/poppy.webp');
+                    break
+                case 10:
+                    aimg_2.setAttribute('src', 'img/icons/syouyu.webp');
+            }
+            break;
+        case 3:
+            switch (num){
+                case 0:
+                    aimg_3.removeAttribute('src');
+                    break;
+                case 1:
+                    aimg_3.setAttribute('src', 'img/icons/HqiHqt.webp');
+                    break;
+                case 2:
+                    aimg_3.setAttribute('src', 'img/icons/Mir4i.webp');
+                    break;
+                case 3:
+                    aimg_3.setAttribute('src', 'img/icons/Xellq.webp');
+                    break;
+                case 4:
+                    aimg_3.setAttribute('src', 'img/icons/NiMAS.webp');
+                    break;
+                case 5:
+                    aimg_3.setAttribute('src', 'img/icons/ii5yu.webp');
+                    break;
+                case 6:
+                    aimg_3.setAttribute('src', 'img/icons/dariru.webp');
+                    break;
+                case 7:
+                    aimg_3.setAttribute('src', 'img/icons/golzou.webp');
+                    break;
+                case 8:
+                    aimg_3.setAttribute('src', 'img/icons/LyA.webp');
+                    break;
+                case 9:
+                    aimg_3.setAttribute('src', 'img/icons/poppy.webp');
+                    break
+                case 10:
+                    aimg_3.setAttribute('src', 'img/icons/syouyu.webp');
+            }
+            break;
+        case 4:
+            switch (num){
+                case 0:
+                    aimg_4.removeAttribute('src');
+                    break;
+                case 1:
+                    aimg_4.setAttribute('src', 'img/icons/HqiHqt.webp');
+                    break;
+                case 2:
+                    aimg_4.setAttribute('src', 'img/icons/Mir4i.webp');
+                    break;
+                case 3:
+                    aimg_4.setAttribute('src', 'img/icons/Xellq.webp');
+                    break;
+                case 4:
+                    aimg_4.setAttribute('src', 'img/icons/NiMAS.webp');
+                    break;
+                case 5:
+                    aimg_4.setAttribute('src', 'img/icons/ii5yu.webp');
+                    break;
+                case 6:
+                    aimg_4.setAttribute('src', 'img/icons/dariru.webp');
+                    break;
+                case 7:
+                    aimg_4.setAttribute('src', 'img/icons/golzou.webp');
+                    break;
+                case 8:
+                    aimg_4.setAttribute('src', 'img/icons/LyA.webp');
+                    break;
+                case 9:
+                    aimg_4.setAttribute('src', 'img/icons/poppy.webp');
+                    break
+                case 10:
+                    aimg_4.setAttribute('src', 'img/icons/syouyu.webp');
+            }
+            break;
+        case 5:
+            switch (num){
+                case 0:
+                    aimg_5.removeAttribute('src');
+                    break;
+                case 1:
+                    aimg_5.setAttribute('src', 'img/icons/HqiHqt.webp');
+                    break;
+                case 2:
+                    aimg_5.setAttribute('src', 'img/icons/Mir4i.webp');
+                    break;
+                case 3:
+                    aimg_5.setAttribute('src', 'img/icons/Xellq.webp');
+                    break;
+                case 4:
+                    aimg_5.setAttribute('src', 'img/icons/NiMAS.webp');
+                    break;
+                case 5:
+                    aimg_5.setAttribute('src', 'img/icons/ii5yu.webp');
+                    break;
+                case 6:
+                    aimg_5.setAttribute('src', 'img/icons/dariru.webp');
+                    break;
+                case 7:
+                    aimg_5.setAttribute('src', 'img/icons/golzou.webp');
+                    break;
+                case 8:
+                    aimg_5.setAttribute('src', 'img/icons/LyA.webp');
+                    break;
+                case 9:
+                    aimg_5.setAttribute('src', 'img/icons/poppy.webp');
+                    break
+                case 10:
+                    aimg_5.setAttribute('src', 'img/icons/syouyu.webp');
+            }
+            break;
+        case 6:
+            switch (num){
+                case 0:
+                    dimg_1.removeAttribute('src');
+                    break;
+                case 1:
+                    dimg_1.setAttribute('src', 'img/icons/HqiHqt.webp');
+                    break;
+                case 2:
+                    dimg_1.setAttribute('src', 'img/icons/Mir4i.webp');
+                    break;
+                case 3:
+                    dimg_1.setAttribute('src', 'img/icons/Xellq.webp');
+                    break;
+                case 4:
+                    dimg_1.setAttribute('src', 'img/icons/NiMAS.webp');
+                    break;
+                case 5:
+                    dimg_1.setAttribute('src', 'img/icons/ii5yu.webp');
+                    break;
+                case 6:
+                    dimg_1.setAttribute('src', 'img/icons/dariru.webp');
+                    break;
+                case 7:
+                    dimg_1.setAttribute('src', 'img/icons/golzou.webp');
+                    break;
+                case 8:
+                    dimg_1.setAttribute('src', 'img/icons/LyA.webp');
+                    break;
+                case 9:
+                    dimg_1.setAttribute('src', 'img/icons/poppy.webp');
+                    break
+                case 10:
+                    dimg_1.setAttribute('src', 'img/icons/syouyu.webp');
+            }
+            break;
+        case 7:
+            switch (num){
+                case 0:
+                    dimg_2.removeAttribute('src');
+                    break;
+                case 1:
+                    dimg_2.setAttribute('src', 'img/icons/HqiHqt.webp');
+                    break;
+                case 2:
+                    dimg_2.setAttribute('src', 'img/icons/Mir4i.webp');
+                    break;
+                case 3:
+                    dimg_2.setAttribute('src', 'img/icons/Xellq.webp');
+                    break;
+                case 4:
+                    dimg_2.setAttribute('src', 'img/icons/NiMAS.webp');
+                    break;
+                case 5:
+                    dimg_2.setAttribute('src', 'img/icons/ii5yu.webp');
+                    break;
+                case 6:
+                    dimg_2.setAttribute('src', 'img/icons/dariru.webp');
+                    break;
+                case 7:
+                    dimg_2.setAttribute('src', 'img/icons/golzou.webp');
+                    break;
+                case 8:
+                    dimg_2.setAttribute('src', 'img/icons/LyA.webp');
+                    break;
+                case 9:
+                    dimg_2.setAttribute('src', 'img/icons/poppy.webp');
+                    break
+                case 10:
+                    dimg_2.setAttribute('src', 'img/icons/syouyu.webp');
+            }
+            break;
+        case 8:
+            switch (num){
+                case 0:
+                    dimg_3.removeAttribute('src');
+                    break;
+                case 1:
+                    dimg_3.setAttribute('src', 'img/icons/HqiHqt.webp');
+                    break;
+                case 2:
+                    dimg_3.setAttribute('src', 'img/icons/Mir4i.webp');
+                    break;
+                case 3:
+                    dimg_3.setAttribute('src', 'img/icons/Xellq.webp');
+                    break;
+                case 4:
+                    dimg_3.setAttribute('src', 'img/icons/NiMAS.webp');
+                    break;
+                case 5:
+                    dimg_3.setAttribute('src', 'img/icons/ii5yu.webp');
+                    break;
+                case 6:
+                    dimg_3.setAttribute('src', 'img/icons/dariru.webp');
+                    break;
+                case 7:
+                    dimg_3.setAttribute('src', 'img/icons/golzou.webp');
+                    break;
+                case 8:
+                    dimg_3.setAttribute('src', 'img/icons/LyA.webp');
+                    break;
+                case 9:
+                    dimg_3.setAttribute('src', 'img/icons/poppy.webp');
+                    break
+                case 10:
+                    dimg_3.setAttribute('src', 'img/icons/syouyu.webp');
+            }
+            break;
+        case 9:
+            switch (num){
+                case 0:
+                    dimg_4.removeAttribute('src');
+                    break;
+                case 1:
+                    dimg_4.setAttribute('src', 'img/icons/HqiHqt.webp');
+                    break;
+                case 2:
+                    dimg_4.setAttribute('src', 'img/icons/Mir4i.webp');
+                    break;
+                case 3:
+                    dimg_4.setAttribute('src', 'img/icons/Xellq.webp');
+                    break;
+                    case 4:
+                    dimg_4.setAttribute('src', 'img/icons/NiMAS.webp');
+                    break;
+                case 5:
+                    dimg_4.setAttribute('src', 'img/icons/ii5yu.webp');
+                    break;
+                case 6:
+                    dimg_4.setAttribute('src', 'img/icons/dariru.webp');
+                    break;
+                case 7:
+                    dimg_4.setAttribute('src', 'img/icons/golzou.webp');
+                    break;
+                case 8:
+                    dimg_4.setAttribute('src', 'img/icons/LyA.webp');
+                    break;
+                case 9:
+                    dimg_4.setAttribute('src', 'img/icons/poppy.webp');
+                    break
+                case 10:
+                    dimg_4.setAttribute('src', 'img/icons/syouyu.webp');
+            }
+            break;
+        case 10:
+            switch (num){
+                case 0:
+                    dimg_5.removeAttribute('src');
+                    break;
+                case 1:
+                    dimg_5.setAttribute('src', 'img/icons/HqiHqt.webp');
+                    break;
+                case 2:
+                    dimg_5.setAttribute('src', 'img/icons/Mir4i.webp');
+                    break;
+                case 3:
+                    dimg_5.setAttribute('src', 'img/icons/Xellq.webp');
+                    break;
+                case 4:
+                    dimg_5.setAttribute('src', 'img/icons/NiMAS.webp');
+                    break;
+                case 5:
+                    dimg_5.setAttribute('src', 'img/icons/ii5yu.webp');
+                    break;
+                case 6:
+                    dimg_5.setAttribute('src', 'img/icons/dariru.webp');
+                    break;
+                case 7:
+                    dimg_5.setAttribute('src', 'img/icons/golzou.webp');
+                    break;
+                case 8:
+                    dimg_5.setAttribute('src', 'img/icons/LyA.webp');
+                    break;
+                case 9:
+                    dimg_5.setAttribute('src', 'img/icons/poppy.webp');
+                    break
+                case 10:
+                    dimg_5.setAttribute('src', 'img/icons/syouyu.webp');
+                    break;
+            }
+            break;
+    }
 }

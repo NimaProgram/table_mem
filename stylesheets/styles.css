@@ -229,3 +229,49 @@ input:focus{
     width: 23px;
     height: cover;
 }
+
+#aimg_1, #aimg_2, #aimg_3, #aimg_4, #aimg_5, #dimg_1, #dimg_2, #dimg_3, #dimg_4, #dimg_5{
+    position: absolute;
+    width: 40px;
+    border-radius: 50px;
+}
+
+#aimg_1 {
+    margin: 0 0 170px 20px;
+}
+
+#aimg_2 {
+    margin: 0 0 60px 20px;
+}
+
+#aimg_3 {
+    margin: 50px 0 0 20px;
+}
+
+#aimg_4 {
+    margin: 160px 0 0 20px;
+}
+
+#aimg_5 {
+    margin: 270px 0 0 20px;
+}
+
+#dimg_1 {
+    margin: 0 0 170px 20px;
+}
+
+#dimg_2 {
+    margin: 0 0 60px 20px;
+}
+
+#dimg_3 {
+    margin: 50px 0 0 20px;
+}
+
+#dimg_4 {
+    margin: 160px 0 0 20px;
+}
+
+#dimg_5 {
+    margin: 270px 0 0 20px;
+}
