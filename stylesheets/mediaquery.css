@@ -130,70 +130,71 @@
     #preset_outcase {
         margin: 160px 0 0 0;
     }
+    .trush {
+        position: absolute;
+        width: 25px;
+        height: cover;
+        margin: 0px 0 250px 80px;
+        background-color: #fff;
+        padding: 5px;
+    }
+    
+    .trush:hover {
+        background: #fff;
+    }
+    
+    .trush:active {
+        background-color: #fff;
+        opacity: 0.7;
+        width: 23px;
+        height: cover;
+    }
+    
+    #aimg_1, #aimg_2, #aimg_3, #aimg_4, #aimg_5, #dimg_1, #dimg_2, #dimg_3, #dimg_4, #dimg_5{
+        position: absolute;
+        width: 20px;
+        border-radius: 50px;
+    }
+    
+    #aimg_1 {
+        margin: 0 0 95px 0;
+    }
+    
+    #aimg_2 {
+        margin: 0 0 35px 0;
+    }
+    
+    #aimg_3 {
+        margin: 25px 0 0 0;
+    }
+    
+    #aimg_4 {
+        margin: 85px 0 0 0;
+    }
+    
+    #aimg_5 {
+        margin: 145px 0 0 0;
+    }
+    
+    #dimg_1 {
+        margin: 0 0 95px 0;
+    }
+    
+    #dimg_2 {
+        margin: 0 0 35px 0;
+    }
+    
+    #dimg_3 {
+        margin: 25px 0 0 0;
+    }
+    
+    #dimg_4 {
+        margin: 85px 0 0 0;
+    }
+    
+    #dimg_5 {
+        margin: 145px 0 0 0;
+    }
+    
 }
 
-.trush {
-    position: absolute;
-    width: 25px;
-    height: cover;
-    margin: 0px 0 250px 80px;
-    background-color: #fff;
-    padding: 5px;
-}
-
-.trush:hover {
-    background: #fff;
-}
-
-.trush:active {
-    background-color: #fff;
-    opacity: 0.7;
-    width: 23px;
-    height: cover;
-}
-
-#aimg_1, #aimg_2, #aimg_3, #aimg_4, #aimg_5, #dimg_1, #dimg_2, #dimg_3, #dimg_4, #dimg_5{
-    position: absolute;
-    width: 20px;
-    border-radius: 50px;
-}
-
-#aimg_1 {
-    margin: 0 0 95px 0;
-}
-
-#aimg_2 {
-    margin: 0 0 35px 0;
-}
-
-#aimg_3 {
-    margin: 25px 0 0 0;
-}
-
-#aimg_4 {
-    margin: 85px 0 0 0;
-}
-
-#aimg_5 {
-    margin: 145px 0 0 0;
-}
-
-#dimg_1 {
-    margin: 0 0 95px 0;
-}
-
-#dimg_2 {
-    margin: 0 0 35px 0;
-}
-
-#dimg_3 {
-    margin: 25px 0 0 0;
-}
-
-#dimg_4 {
-    margin: 85px 0 0 0;
-}
-
-#dimg_5 {
-    margin: 145px 0 0 0;
-}
