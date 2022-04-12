@@ -3,7 +3,7 @@
         overflow: hidden;
     }
     body{
-        background-image: url(../img/smaph.png);
+        background-image: url(../img/smaph.webp);
     }
     #all {
         /* flex-direction: column; */
