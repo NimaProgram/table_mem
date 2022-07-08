@@ -342,7 +342,7 @@ emp:0
 
 HqiHqt:1  Mir4i:2  Xellq:3  NiMA:4  ii5yu:5
 
-dariru:6  golzou:7  Lya:8  poppy:9  syouyu:10
+dariru:6  golzou:7  LyA:8  poppy:9  syouyu:10
 
 */
 
@@ -380,6 +380,26 @@ const ps_2_run = () => { // assign preset2
     dSel_3.selectedIndex = ps2p[7];
     dSel_4.selectedIndex = ps2p[8];
     dSel_5.selectedIndex = ps2p[9];
+    towhite() // white select
+    ns = 1
+    while (ns < 11){ // icon assign
+        readingName(ns)
+        ns ++;
+    }
+}
+const ps3p = [3,1,5,7,8,4,2,9,6,10] // preset3
+
+const ps_3_run = () => { // assign preset3
+    aSel_1.selectedIndex = ps3p[0];
+    aSel_2.selectedIndex = ps3p[1];
+    aSel_3.selectedIndex = ps3p[2];
+    aSel_4.selectedIndex = ps3p[3];
+    aSel_5.selectedIndex = ps3p[4];
+    dSel_1.selectedIndex = ps3p[5];
+    dSel_2.selectedIndex = ps3p[6];
+    dSel_3.selectedIndex = ps3p[7];
+    dSel_4.selectedIndex = ps3p[8];
+    dSel_5.selectedIndex = ps3p[9];
     towhite() // white select
     ns = 1
     while (ns < 11){ // icon assign
